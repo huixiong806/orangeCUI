@@ -5,7 +5,6 @@
 class Console
 {
 public:
-	static Console* instance;
 	//获得实例
 	static Console *getInstance();
 	//初始化，程序开始时调用一次
@@ -31,9 +30,9 @@ public:
 	// 重置窗口大小
 	void resize(short sizeW, short sizeH);
 private:
-	
 	Console(){}
 	~Console() {}
+	static Console* instance;
 	//行数
 	short row{ 30 };
 	//列数

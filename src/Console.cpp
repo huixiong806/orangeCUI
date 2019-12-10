@@ -1,7 +1,7 @@
 #include "Console.h"
 using namespace std;
 Console *Console::instance = nullptr;
-Console* Console::getInstance()
+Console *Console::getInstance()
 {
 	if (instance == nullptr)
 		instance = new Console();
