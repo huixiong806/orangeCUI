@@ -1,5 +1,12 @@
 #include "Console.h"
 using namespace std;
+Console *Console::instance = nullptr;
+Console* Console::getInstance()
+{
+	if (instance == nullptr)
+		instance = new Console();
+	return instance;
+}
 void Console::init()
 {
 	outputBuffer= CreateConsoleScreenBuffer(

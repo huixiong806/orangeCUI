@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "orangeCUI", "orangeCUI\orangeCUI.vcxproj", "{661E7892-0508-483A-8D13-920417DABB1B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{661E7892-0508-483A-8D13-920417DABB1B} = {661E7892-0508-483A-8D13-920417DABB1B}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +26,14 @@ Global
 		{661E7892-0508-483A-8D13-920417DABB1B}.Release|x64.Build.0 = Release|x64
 		{661E7892-0508-483A-8D13-920417DABB1B}.Release|x86.ActiveCfg = Release|Win32
 		{661E7892-0508-483A-8D13-920417DABB1B}.Release|x86.Build.0 = Release|Win32
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Debug|x64.ActiveCfg = Debug|x64
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Debug|x64.Build.0 = Debug|x64
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Debug|x86.ActiveCfg = Debug|Win32
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Debug|x86.Build.0 = Debug|Win32
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Release|x64.ActiveCfg = Release|x64
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Release|x64.Build.0 = Release|x64
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Release|x86.ActiveCfg = Release|Win32
+		{C7CC0D7F-B6CD-4977-A24E-07FC0E8369CE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -5,9 +5,9 @@
 #include<ctime>
 #include<Windows.h>
 using namespace std;
-unique_ptr<Console> con;
 void update()
 {
+	Console* con = Console::getInstance();
 	static int screenUpdateCounter = 0;
 	//一秒刷新一次显示
 	if (screenUpdateCounter == 0)
@@ -22,7 +22,7 @@ void update()
 }
 int main()
 {
-	con = make_unique<Console>();
+	Console* con = Console::getInstance();
 	con->init();
 	while (true)
 	{
