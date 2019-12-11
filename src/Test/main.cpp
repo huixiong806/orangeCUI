@@ -24,6 +24,7 @@ int main()
 {
 	Console* con = Console::getInstance();
 	con->init();
+	con->resize(50, 20);
 	while (true)
 	{
 		update();

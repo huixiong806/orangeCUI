@@ -85,6 +85,7 @@ void Console::resize(short sizeW= 80-1, short sizeH=25-1)
 	SetConsoleWindowInfo(outputBuffer, true, &rc);
 	SetConsoleScreenBufferSize(hStdOut, { (short)sizeW,(short)sizeH });
 	SetConsoleScreenBufferSize(outputBuffer, { (short)sizeW,(short)sizeH });
+	clear();
 }
 void Console::printCharAt(short x, short y, char ch, Color color)
 {
