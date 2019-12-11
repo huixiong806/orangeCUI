@@ -11,7 +11,7 @@ public:
 	void init(void);
 	//刷新显示
 	void refresh(void);
-	//清楚所有字符
+	//清除所有字符
 	void clear(void);
 	//设置标题框背景颜色
 	void setTitleColor(BackColor color_);
@@ -27,8 +27,14 @@ public:
 	void showTheCursor(void);
 	//定位控制台光标
 	void setCursorPosition(short x, short y);
+	//定位控制台光标到输入框
+	void setCursorToInputBox();
 	// 重置窗口大小
 	void resize(short sizeW, short sizeH);
+	//获取窗口行数
+	short getRow() { return row; }
+	//获取窗口列数
+	short getCol() { return col; }
 private:
 	Console(){}
 	~Console() {}

@@ -70,6 +70,10 @@ void Console::setCursorPosition(short x, short y)
 	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
 	SetConsoleCursorPosition(hStdOut, { x,y });
 }
+void Console::setCursorToInputBox()
+{
+	setCursorPosition(0, row - 1);
+}
 void Console::resize(short sizeW= 80-1, short sizeH=25-1)
 {
 	row = sizeH;

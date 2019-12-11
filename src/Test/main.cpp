@@ -1,6 +1,7 @@
 #include"Console.h"
 #include<iostream>
 #include<algorithm>
+#include<string>
 #include<memory>
 #include<ctime>
 #include<Windows.h>
@@ -16,6 +17,10 @@ void update()
 	time_t now = time(0);
 	char* dt = ctime(&now);
 	con->printAt(0, ColorString(dt,Color::BRIGHTYELLOW));
+	for (int i = 1; i <= 16; ++i)
+	{
+		con->printAt(i, ColorString("color test",(Color)(i-1)));
+	}
 	/*这里是代码结束*/
 	screenUpdateCounter++;
 	screenUpdateCounter %= 60;
@@ -24,7 +29,6 @@ int main()
 {
 	Console* con = Console::getInstance();
 	con->init();
-	con->resize(50, 20);
 	while (true)
 	{
 		update();
